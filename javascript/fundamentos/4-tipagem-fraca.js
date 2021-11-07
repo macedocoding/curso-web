@@ -1,4 +1,5 @@
-// JS possui tipagem dinâmica e fraca, ou seja, não é necessário especificar o tipo de dado durante a declaração de uma variável ou constante e pode-se realizar operações com diferentes tipos. O interpretador se encarregará de converter ou concatenar.
+// JS possui tipagem dinâmica, ou seja, não é necessário especificar o tipo de dado durante a declaração de uma variável ou constante, pois o tipo é inferido pelo valor do dado em runtime.
+// JS também possui tipagem fraca, ou seja, pode-se realizar operações com diferentes tipos. O interpretador se encarregará de converter ou concatenar. 
 
 let palavra = 'Armário'; // String
 let numero = '12'; // String
