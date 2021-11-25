@@ -7,3 +7,4 @@ Utilizar sempre lowerCamelCase, com exceção dos nomes de arquivos que devem se
 
 # LEIA
 Para a execução dos arquivos da pasta html, deve-se instalar um servidor local como live-server ou http-server.
+Haverão arquivos soltos em algumas pastas cujo conteúdo serve apenas para fins de fixação. Exemplo: javascript/fundamentos.js
