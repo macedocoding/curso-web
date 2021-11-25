@@ -1,5 +1,5 @@
-/* Tipo primitivo number se refere aos tipo de dado numérico de uma maneira geral (conjunto dos reais).
-Quando utilizamos Number (capitalizado), nos referimos ao objeto encapsulado que possui, portanto, métodos e propriedades para trabalhar com números. */
+/* Tipo primitivo number se refere ao tipo de dado numérico de uma maneira geral (conjunto dos reais).
+Quando utilizamos Number (capitalizado), nos referimos ao objeto encapsulado que possui, portanto, métodos e propriedades para trabalharmos com números. */
 
 const numero = 35.46; // Variável "numero" do tipo primitivo number
 console.log(numero);

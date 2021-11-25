@@ -1,0 +1,116 @@
+CSS é uma linguagem de folhas de estilo que permite a modificação de estilo(cores, posições, fontes etc.) dos elementos HTML.
+Exemplo de uma estrutura básica CSS para mudar a cor da fonte de todos os parágrafos de um documento HTML para azul:
+
+p {
+    color: blue;
+}
+
+O "p", que indica o elemento parágrafo, é chamado de seletor em CSS, "color" é chamada propriedade, "blue" é o valor da propriedade e "color: blue;" em sua totalidade é uma declaração (statement).
+
+Podemos criar classes com modificações para reutilizarmos em diversas partes do código. Segue um exemplo que muda a cor de fundo para amarelo:
+
+.fundo-amarelo {
+    backgroud-color: yellow;
+}
+
+Podemos referenciar ids de elementos e modificar seu estilo. Por exemplo:
+
+#algum-id {
+    font-family: monospace;
+}
+
+Por fim, podemos também selecionar atributos e valores dos elementos para modificações de estilos.
+No exemplo abaixo, os elementos com atributo "type" e valor "text", ou seja, caixas de texto do elemento "input" terão a propriedade padding-top alterada:
+
+[type:'text'] {
+    padding-top: 10px;
+}
+
+Repare que o seletor inicia com um ".", isto indica a criação de uma classe. Para utilizála, podemos inserí-la dentro de tags de elementos HTML. No exemplo abaixo, tornaremos o fundo de todo documento (tudo dentro de "body") amarelo, inserindo o atributo class e passando o valor "fundo-amarelo" (sem o ponto mesmo):
+
+<body class="fundo-amarelo">
+</body>
+
+Algumas propriedade CSS recorrentes:
+
+color = cor da fonte;
+backgroud-color = cor de fundo de um elemento;
+opacity = opacidade/transparência de elementos;
+font-size = tamanho da fonte;
+font-family = tipografia da fonte. Pode-se adicionar fonte1, fonte2, fonte3, ...;
+font-weight = define a espessura do contorno das fontes;
+font-style = define estilo da fonte (normal, itálico, oblíquo);
+text-decoration = adiciona decorações externas ao texto;
+text-transform = muda a caixa dos textos;
+width = controla a largura de um elemento;
+height = controla a altura de um elemento;
+border-style = estilo de uma borda;
+border-color = cor de uma borda;
+border-width = largura de uma borda;
+border-radius = raio de uma borda (arredondamento);
+line-height = espaçamento das linhas;
+
+Espaçamento de elementos
+
+Podemos considerar os elementos HTML como retângulos e ajustá-los em nossa página com propriedades CSS.
+
+Considerando um elemento "p". Padding é o preenchimento do "retângulo" que representa este elemento, ou seja, é o espaço entre o conteúdo e a borda.
+Border é a borda deste retângulo imaginário e podemos modificar sua espessura, cor, arredondamento das bordas etc.
+Margin é o espaço externo até a borda do nosso elemento.
+
+Para evitar estilizações conflitantes, há um esquema de hierarquia em CSS.
+Da menor para maior -> seletor body < classes < posição das classes no documento CSS (por último, maior hierarquia) < seletor de atributo id < estilo inline < valor !important
+
+Podemos criar variáveis em CSS com a sintaxe:
+
+--cor-principal: #0032E0;
+
+Depois podemos reutilizá-la em outros trechos do código referenciando-a no lugar de um valor, da seguinte forma (definindo um valor de reserva (fallback), caso a variável não seja encontrada):
+
+.cor-parede {
+    background-color: var(--cor-principal, brown);
+}
+
+Variáveis em CSS podem ser herdadas se adicionadas ao elemento :root, que é um seletor do tipo pseudo-class e representa o elemento raíz do documento (associado ao elemento html). Exemplo:
+
+:root {
+    --cor-fonte: red;
+}
+
+p {
+    color: var(--cor-fonte, red);
+}
+
+A propriedade box-shadow da a possibilidade de sombrear elementos e funciona passando-se os seguintes parâmetros, sendo em caixa ALTA os OPCIONAIS:
+
+#caixa {
+    box-shadow: offset-x offset-y BLUR-RADIUS SPREAD-RADIUS color;
+}
+
+A propriedade opacity é usada para ajustar a opacidade (ou transparência) de um elemento, variando o valor de 1 (opaco) até 0 (transparente).
+
+A propriedade text-transform modifica o texto para que apareça consistentemente padronizado independente de como foi inputado.  Os valores padão são "lowercase", "uppercase", "capitalize", "initial", "inherit" e "none".
+
+Pseudo classes são keywords que podem se associar ao seletor de um elemento para selecionar um estado específico deste elemento. Utilizando a pseudo clase :hover para associada ao elemento a:
+
+a:hover{
+
+}
+
+É possível deslocar os elementos html, inicialmente posicionados segundo o CSS Box Model, relativamente à sua posição inicial, utilizando a declaração "position:relative" e movimentando o elemento com as propriedades "up", "bottom", "left", "right". Exemplo:
+
+#painel {
+    position: relative;
+    left: 10px;
+    up: 10px;
+}
+
+Valor "relative" permite a movimentação do elemento por todo body
+Valor "absolute" permite a movimentação presa ao próximo elemento ancestral que tenha definido uma propriedade "position" sem ser "static"
+Valor "fixed" prende o elemento em relação à janela do navegador e permanece fixo mesmo quando a janela é rolada
+
+A propriedade z-index muda a ordem de aparição de elementos sobrepostos
+
+A função linear-gradient(), adicionada como valor da propriedade background, permite a construção de gradientes de cor através dos parâmetros ângulo (x em graus) e cores seguindo a estrutura genérica:
+
+transform: linear-gradient(xdeg, cor_1, cor_2, ..., cor_n);

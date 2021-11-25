@@ -1,0 +1,37 @@
+<main></main> - conteúdo principal do site
+
+<p></p> - parágrafo
+
+<h1></h1> até <h6></h6> - títulos em ordem hierárquica
+
+<img src="link" alt="Texto alternativo"> - adicionar imagem com atributo src passando o link local ou externo e atributo alt passando um texto para acessibilidade ou indisponibilidade do link
+
+<a href="link"></a> - adiciona link, através do atributo href, para conteúdo fora da página atual e o texto clicável é passado entre as tags
+
+<a href="#algum-id" target="_blank"></a> - também posso linkar para elementos dentro do meu arquivo HTML através do atributo href com um # seguido do ID do elemento que quero linkar. O atributo target indica onde o link deve ser aberto, por exemplo, o valor _blank diz que o link deve ser aberto em uma nova aba
+
+* ID é um atributo que identifica unicamente um elemento
+
+** Pode-se utilizar como valor de href apenas # quando não quisermos utilizar links (gera um link morto)
+
+<form action="link"></form> - representa uma seção de um documento que contém controles interativos que permitem ao usuário submeter informação a um determinado servidor web
+
+<input type="text" placeholder="Algo" required> - tag para obter dados do usuário. Atributo type diz que tipo de dado será recebido e placeholder é o texto que será mostrado no local onde o texto, neste caso, será digitado. O atributo required força o usuário a digitar algo antes de submeter.
+
+<label for="grupo">
+    <input id="grupo" type="radio" name="footer">
+</label> - Criação de um radio button. Radio buttons associados devem possuir atributo name com o mesmo valor, para que seja possível selecionar apenas 1 do grupo. Também é recomendado envolver as tags input com tags label dotadas de atributo for que devem ter o mesmo valor do ID da tag associada input. 
+
+<label for="grupo">
+    <input id="grupo" type="checkbox" name="footer">
+</label> - Mesmas regras dos radio buttons se aplicam aos checkbox, porém pode-se selecionar mais de uma opção.
+
+<label for="valor">
+    <input id="valor" type="radio" name="footer" value="valor">
+</label> - O atributo value é o meio pelo qual, inputs do tipo checkbox e radio, passarão valores ao servidor, caso value não seja utilizado, o valor padrão passado será "on". Lembrando que a estrutura passada será algo do tipo name=value (footer=valor, neste caso)
+
+* O atributo checked, adicionado à tag input, deixa selecionado um radio button ou checkbox por default
+
+<button type="submit"></button> - cria um botão que submete os dados recebidos pelo input ao servidor especificado. type diz o tipo de botão. O texto sobre o botão fica entre as tags
+
+<div></div> - O elemento div separa partes do código de forma genérica. Antes do HTML5 era utilizado em demasia, porém, com a mudança de abordagem do HTML5, dando mais ênfase à semântica, div deve ser utilizado apenas em casos onde é necessário uma divisão genérica de uma porção de código.

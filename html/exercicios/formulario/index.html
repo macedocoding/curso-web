@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div id="form">
+        <h1 id="title">Formulário de satisfação</h1>
+        <p id="description">Ajude-nos a melhorar nosso serviço respondendo às perguntas abaixo</p>
+        <form id="survey-form" action="#">
+            <label id="name-label" for="name">Nome <br>
+                <input id="name" type="text" placeholder="Nome" required>
+            </label>
+            <br><br>
+            <label id="email-label" for="email">e-mail <br>
+                <input id="email" type="email" placeholder="e-mail" required>
+            </label>
+            <br><br>
+            <label id="number-label" for="number">Idade <br>
+                <input id="number" type="number" placeholder="Idade" min="18" max="105" required>
+            </label>
+            <br><br>
+            <label for="esporte">
+                <input id="esporte" type="radio" name="lazer" value="esporte">Praticar esportes
+            </label>
+            <label for="caseiro">
+                <input id="caseiro" type="radio" name="lazer" value="caseiro">Atividades em casa
+            </label>
+            <br>
+            <select id="dropdown">
+                <option>Esporte favorito</option>
+                <option value="andar">Caminhar ou correr</option>
+                <option value="bola">Futebol, basquete, vôlei ou similares</option>
+                <option value="nadar">Natação</option>
+                <option value="bicicleta">Ciclismo</option>
+                <option value="luta">Lutas</option>
+                <option value="intelectual">Xadrez, damas, e-sports ou similares</option>
+            </select>
+            <br>
+            <label for="familia">
+                <input id="caseiro" type="checkbox" name="pessoas" value="familia">Família
+            </label>
+            <label for="amigos">
+                <input id="amigos" type="checkbox" name="pessoas" value="amigos">Amigos
+            </label>
+            <label for="sozinho">
+                <input id="sozinho" type="checkbox" name="pessoas" value="sozinho">Sozinho
+            </label>
+            <br><br>
+            <label for="sugestao">Sugestões e críticas
+                <br><textarea id="sugestao" name="sugestao" cols="30" rows="10" placeholder="Digite aqui"></textarea>
+            </label>
+            <br>
+            <button id="submit" type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
