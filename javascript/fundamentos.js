@@ -16,6 +16,9 @@
 // Função global isNaN() e o método Number.isNaN() retornam true ou false se o argumento for ou não NaN.
 // Método Number.isFinite() retorna true se o valor passado como argumento for diferente de Infinity, -Infinity Nan e 0.
 // 0 === -0 retorna true, porém quando utilizados em denominadores (com numerador != 0) resultam em Infinity e -Infinity, respectivamente.
-// ES 2020 adicionou o tipo BigInt que permite a utilização de inteiros extraordinariamente grandes. Para representarmos um BigInt, devemos adicionar na frente de um inteiro (decimal, binário, octal, hexadecimal) a letra "n". Ex: 2_3348_033n, 0b1001_0101_1011n, 0o473653034, 0x409fb9a1b (os underscores são meros separadores)
+// ES 2020 adicionou o tipo BigInt que permite a utilização de inteiros extraordinariamente grandes. Para representarmos um BigInt, devemos adicionar na frente de um inteiro (decimal, binário, octal, hexadecimal) a letra "n". Ex: 2_3348_033n, 0b1001_0101_1011n, 0o473653034, 0x409fb9a1b (os underscores são meros separadores).
 // Date é uma classe em JS que permite a representação de datas e tempo. Ex.: O método estático Date.now() retorna o número de milissegundos desde 01/01/1970. 
-// Também possível instanciar um objeto do tipo Date com o construtor Date(). Ex.: let data = new Date()
+// Também possível instanciar um objeto do tipo Date com o construtor Date(). Ex.: let data = new Date().
+// Strings são sequências imutáveis de caracteres com 16 bits, codificados como UTF-16.
+// Strings literais e retornadas da função String() FORA do contexto de uma função construtora (new) são PRIMITIVAS e strings criadas a partir do construtor String() são objetos, porém, quando invocados métodos a partir de strings primitivas, JS cria um objeto para que seja possível tal operação.
+// A propriedade String.length retorna a quantidade de caracteres de uma string.
