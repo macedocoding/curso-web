@@ -1,7 +1,7 @@
 // Linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca, multiparadigma (suporta POO) e com garbage collector.
 // Expressões retornam valores, por exemplo, nomes de variáveis, operações aritméticas, acesso à elementos de arrays e objetos são exemplos de expressões.
 // Declarações (statements) não retornam valores mas modificam o programa de alguma maneira. Atribuições, estruturas de repetição e decisão são exemplos de declarações.
-// Tipos primitivos JS: numbers, strings, Booleans, null, undefined e Symbol
+// Tipos primitivos JS: numbers, bigints, strings, booleans, null, undefined, symbol
 // Tudo que não é tipo primitivo é objeto (pertencente ao tipo objeto) e contém propriedades com nome e valor (par chave-valor). Alguns tipos objetos: objeto, array, Set, Map, Date, Error, RegExp etc.
 // Até mesmo classes e funções são tipos especializados de objetos. Podem ser tratados como valores e atribuídos à variáveis ou passados como parâmetros de outras funções ou métodos (funções definidas como propriedades de objetos).
 // Os próprios tipos definem métodos para trabalharmos com valores. Ex.: a.sort() ao invés da função sort(a).
@@ -22,3 +22,10 @@
 // Strings são sequências imutáveis de caracteres com 16 bits, codificados como UTF-16.
 // Strings literais e retornadas da função String() FORA do contexto de uma função construtora (new) são PRIMITIVAS e strings criadas a partir do construtor String() são objetos, porém, quando invocados métodos a partir de strings primitivas, JS cria um objeto para que seja possível tal operação.
 // A propriedade String.length retorna a quantidade de caracteres de uma string.
+// Sequências de escape são formadas por \ e um caractere de escape que possui significado especial. É possível, por exemplo, adicionar um caractere de quebra de linha (\n) ou uma tabulação (\t) dentro muitas outras possibilidades. Lembrando que também é posśivel atingir o mesmo resultado com a sintaxe \unnnn, \xnn ou \u{n(1 a 5)}, onde n é um caractere hexadecimal.
+// \ permite quebrar uma string literal entre '' ou "" em múltiplas linhas.
+// Template literals ou strings são formadas utilizando aspas envolvendo as strings. Isto permite a inclusão de expressões dentro dos literais. Ex.: let nome = "João"; console.log(`Meu nome é ${nome}`);
+
+// A JavaScript object is a mapping between keys and values. Keys are strings (or Symbols), and values can be anything. This makes objects a natural fit for hashmaps.
+//Functions are regular objects with the additional capability of being callable.
+
