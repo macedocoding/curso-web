@@ -27,5 +27,7 @@ console.log(texto.toUpperCase());// Modifica todos os caracteres da string para 
 console.log(texto.normalize()); // Normalização Unicode NFC
 console.log(texto.normalize("NFD")); // Normalização NFD
 
-// 
+// Trabalhando com caracteres individuais (16 bit) de uma string
 
+console.log(texto.charAt(4)) // Método que retorna o caractere no índice passado como argumento
+console.log(texto.charAt(texto.length-1)) // Outro exemplo, utilizando a propriedade length, que retorna o número de caracteres -1 para retornar o último caractere da string
