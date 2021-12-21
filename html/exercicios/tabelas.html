@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            background-color: blueviolet;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        thead tr {
+            border-bottom: 3px solid red;
+        }
+
+        tbody tr:hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Produtos</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Peso</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João</td>
+                <td>25</td>
+                <td>130</td>
+            </tr>
+            <tr>
+                <td>Eduardo</td>
+                <td>22</td>
+                <td>93</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="2">Maior peso</td>
+            <td>130</td>
+        </tfoot>
+    </table>
+</body>
+
+</html>
